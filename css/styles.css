@@ -87,34 +87,34 @@ nav {
 
 /* Hero section styles */
 
+.profile {
+    text-align: center; /* Center the image */
+   
+    margin-top: 30px; /* Adds space below the image */
+}
+
+.profile-img {
+    width: 250px; /* Set the size of the profile image */
+    height: 250px; /* Ensure it's a square */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border: 3px solid #fff; /* Optional: adds a white border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+
 .hero {
     min-height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: center; /* Centers content horizontally */
     position: relative;
     overflow: hidden;
-    justify-content: center; /* Centers content horizontally */
 }
 
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px; /* Adjust the size to make the circle bigger */
-    height: 250px; /* Same as width for a perfect circle */
-    overflow: hidden;
-    border-radius: 50%; /* Makes the image circular */
-}
 
-.hero-image .hero-img {
-    width: 100%; /* Makes the image fill the container */
-    height: 100%; /* Ensures the image stays proportional */
-    object-fit: cover; /* Ensures the image covers the circle area */
-    object-position: center; /* Ensures the image is centered within the circle */
-}
 
 .hero-content {
-    max-width: 600px;
+    max-width: 900px;
     padding: 50px 0;
     text-align: center; /* Centers the text below the image */
 }
