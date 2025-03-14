@@ -237,6 +237,7 @@ nav {
     margin-bottom: 15px;
 }
 
+
 .tag {
     display: inline-block;
     background: var(--light);
@@ -246,6 +247,35 @@ nav {
     margin-right: 5px;
     margin-bottom: 5px;
 }
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Change button color on hover */
+.dropbtn:hover {
+    background-color: #45a049;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
 
 /* Skills section styles */
 .skills {
@@ -320,23 +350,6 @@ nav {
 }
 
 
-/* Footer styles */
-footer {
-    background-color: var(--dark);
-    color: red;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.social-links {
-    margin-bottom: 20px;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    font-size: 20px;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
