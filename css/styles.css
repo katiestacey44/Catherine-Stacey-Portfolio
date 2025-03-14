@@ -1,9 +1,9 @@
 /* Base styles and variables */
 :root {
-    --primary: #f5b0d2;
+    --primary: #f371b2;
     --secondary: #1d1e1e;
     --accent: #490c05;
-    --light: #c446ee;
+    --light: #ee4c95;
     --dark: #111111;
     --shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
@@ -52,39 +52,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+   
 }
 
 .logo {
     font-size: 25px;
     font-weight: bold;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+   
 }
 
 .nav-links li {
     margin-left: 50px;
+    
 }
 
 .nav-links a {
     font-weight: 300;
+    
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: var(--secondary);
-    margin: 5px;
-    border-radius: 3px;
-}
 
 /* about section styles */
 
@@ -127,7 +119,7 @@ nav {
 }
 
 .about h1 span {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .about p {
