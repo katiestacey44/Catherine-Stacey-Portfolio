@@ -35,11 +35,12 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 /* Header styles */
 header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
@@ -54,7 +55,7 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--secondary);
 }
@@ -65,11 +66,11 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .nav-links a {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .hamburger {
@@ -134,6 +135,11 @@ nav {
     margin-bottom: 30px;
     color: var(--dark);
 }
+.about a {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--dark);
+}
 
 
 .btn {
@@ -180,6 +186,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    justify-content: center; /* Centers the grid items horizontally */
 }
 
 .project-card {
@@ -279,21 +286,25 @@ nav {
 
 /* Skills section styles */
 .skills {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax width as needed */
+    gap: 10px;
+    justify-content: center; /* Centers rows with fewer items */
     text-align: center;
 }
 
+
+
 .skill-item {
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    
 }
 
 .skill-item:hover {
@@ -308,79 +319,57 @@ nav {
 }
 
 /* Contact section styles */
-.contact {
-    background-color: var(--secondary);
-    color: white;
-    padding: 60px 0;
+#contact {
+    background-color: #000000; /* Light background for contrast */
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.contact .section-header h2 {
-    color: white;
-    font-size: 2.5rem;
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #fafafa;
     margin-bottom: 15px;
 }
 
-.contact .section-header p {
-    color: var(--light);
-    max-width: 700px;
-    margin: 0 auto 30px;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.contact-info {
-    text-align: center;
-}
-
 .contact-info p {
-    font-size: 1.5rem;
-    color: white; /* Updated to white */
+    font-size: 1.1rem;
+    color: #d9d8d8;
     margin-bottom: 20px;
 }
 
 .contact-info a {
-    font-size: 1.5rem;
-    color: var(--primary);
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #b22280; /* Burgundy color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .contact-info a:hover {
-    color: var(--accent);
+    color: #5e013b; 
 }
 
+.social-links {
+    margin-top: 15px;
+}
 
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #b22284; /* Burgundy buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .about h1 {
-        font-size: 2.5rem;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: red;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        box-shadow: var(--shadow);
-        transform: translateY(-150%);
-        transition: transform 0.3s ease;
-    }
-    
-    .nav-active {
-        transform: translateY(0);
-    }
-    
-    .nav-links li {
-        margin: 15px 0;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-  
+.social-links a:hover {
+    background-color: #8b004f; /* Darker burgundy */
 }
